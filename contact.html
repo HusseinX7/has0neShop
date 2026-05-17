@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontaktseite des has0ne DevStore.">
+  <title>Kontakt | has0ne DevStore</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html" aria-label="has0ne DevStore Startseite">
+        <span class="brand-mark">H{0}</span>
+        <span class="brand-text">
+          <strong>has0ne</strong>
+          <small>DevStore</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">Studio</a>
+        <a href="contact.html" aria-current="page">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page wrap">
+    <section class="hero">
+      <p class="eyebrow">Kontakt</p>
+      <h1>Kontakt</h1>
+      <p class="lead">
+        Bei Fragen zu Produkten, Lizenzen oder dem Projekt kann das Kontaktformular verwendet werden.
+        Da es sich aber um ein Übungsprojekt handelt, werden hier keine echten Nachrichten verschickt.
+      </p>
+    </section>
+
+    <section class="section split">
+      <section class="card info-card">
+        <h2>Nachricht senden</h2>
+        <form id="contact-form">
+          <p>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </p>
+          <p>
+            <label for="email">E Mail</label>
+            <input id="email" name="email" type="email" required>
+          </p>
+          <p>
+            <label for="topic">Thema</label>
+            <select id="topic" name="topic" required>
+              <option value="">Bitte auswählen</option>
+              <option value="produkte">Produktfrage</option>
+              <option value="lizenz">Lizenzfrage</option>
+              <option value="projekt">Projektfrage</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" required></textarea>
+          </p>
+          <button class="button" type="submit">Absenden</button>
+        </form>
+        <p id="form-message" class="muted" hidden></p>
+      </section>
+
+      <aside class="card info-card">
+        <h2>Kontaktdaten</h2>
+        <p>has0ne Studios</p>
+        <p>Karlsplatz 13</p>
+        <p>1040 Wien</p>
+        <p>Österreich</p>
+        <p>E Mail: <a href="mailto:contact@has0ne-studios.com">contact@has0ne-studios.com</a></p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <section>
+        <h2>has0ne DevStore</h2>
+        <p class="muted">Digitale Script Kits und Game Dev Module von has0ne Studios.</p>
+      </section>
+      <section>
+        <h2>Seiten</h2>
+        <ul class="footer-links">
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">Studio</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="imprint.html">Impressum</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Rechtliches</h2>
+        <ul class="footer-links">
+          <li><a href="accessibility.html">Barrierefreiheit</a></li>
+          <li><a href="privacy.html">Datenschutz</a></li>
+          <li><a href="software-license.html">Lizenz</a></li>
+          <li><a href="media-licenses.html">Medien und Lizenzen</a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+
+  <p id="site-status" class="status" role="status" aria-live="polite" hidden></p>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
